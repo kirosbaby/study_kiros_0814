@@ -9,11 +9,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-driver = webdriver.Firefox()  # 实例化
+driver = webdriver.Chrome()  # 实例化
 url1 = 'https://www.baidu.com'
 url2 = 'file:///C:/Users/Administrator/Documents/Tencent%20Files/308902181/FileRecv/study.html'
 url3 = 'https://jd.com'
-driver.get(url3)
+driver.get(url2)
 
 '''id定位'''
 # driver.find_element_by_id('kw').send_keys('牛郎织女千里来相会')  # send_keys--输入内容
@@ -57,12 +57,14 @@ driver.get(url3)
 #     i.click()
 #     time.sleep(1)
 '''下拉框'''
-# time.sleep(1)
+time.sleep(1)
 # driver.find_element(By.XPATH,'//*[@id="file_number"]').send_keys(r'C:\Users\Administrator\Desktop\原桌面\class.txt')
-# time.sleep(3)
-# elemt = driver.find_element(By.XPATH,'/html/body/form/table/tbody/tr[7]/td[2]/select')
-# select=Select(elemt)
-# select.select_by_index(1)
+time.sleep(3)
+elemt = driver.find_element(By.XPATH,'/html/body/form/table/tbody/tr[7]/td[2]/select')
+select=Select(elemt)
+# select.select_by_index(1) # 索引获取下拉选项
+# select.select_by_value('北京') # value属性的值获取下拉选项
+# select.select_by_visible_text('哈佛大学')# 通过文本获取下拉选项
 
 '''上传文件'''
 # driver.find_element(By.ID,'file_number').send_keys(r'C:\Users\Administrator\Documents\Tencent Files\308902181\FileRecv\data.csv')
@@ -76,18 +78,21 @@ driver.get(url3)
 # driver.find_element(By.LINK_TEXT,'星火成炬 | 陪伴是最长情的告白').click()
 
 '''前进，后退，获取title，最大化'''
-driver.find_element(By.CLASS_NAME, 'link-login').click()
-time.sleep(2)
-driver.back()  # 返回
-time.sleep(2)
-driver.forward()  # 前进
-time.sleep(2)
+# driver.find_element(By.CLASS_NAME, 'link-login').click()
+# time.sleep(2)
+# driver.back()  # 返回
+# time.sleep(2)
+# driver.forward()  # 前进
+# time.sleep(2)
 # driver.set_window_size(width=700,height=500)# 设置浏览器窗口大小
-time.sleep(2)
-driver.maximize_window()  # 最大化浏览器
-time.sleep(2)
-print(driver.get_window_size())  # 获取窗口大小
-print(driver.title)  # 获取title
+# time.sleep(2)
+# driver.maximize_window()  # 最大化浏览器
+# time.sleep(2)
+# print(driver.get_window_size())  # 获取窗口大小
+# print(driver.title)  # 获取title
+
+
+
 
 
 
@@ -96,4 +101,4 @@ print(driver.title)  # 获取title
 
 
 time.sleep(8)
-# driver.quit()# 关闭浏览器
+driver.quit()# 关闭浏览器

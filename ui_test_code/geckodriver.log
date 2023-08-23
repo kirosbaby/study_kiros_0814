@@ -497,3 +497,42 @@ JavaScript error: https://storage.jd.com/retail-mall/jdc_user_passport/pc/user/p
 1692754773028	Marionette	INFO	sendAsync bb3b221b-c557-4b8d-a4a0-1e791b234230
 1692754775205	Marionette	INFO	sendAsync bb3b221b-c557-4b8d-a4a0-1e791b234230
 1692754777434	Marionette	INFO	sendAsync bb3b221b-c557-4b8d-a4a0-1e791b234230
+1692755588698	geckodriver	INFO	Listening on 127.0.0.1:58627
+1692755591785	mozprofile::profile	INFO	Using profile path C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.neEntRqHYFS9
+1692755591788	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args []
+1692755591796	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58637
+1692755592995	Marionette	INFO	Listening on port 58637
+1692755594548	Marionette	INFO	startBrowser ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755594575	Marionette	INFO	sendAsync ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755594927	Marionette	INFO	sendAsync ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755599226	Marionette	INFO	sendAsync ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755599235	Marionette	INFO	sendAsync ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755601347	Marionette	INFO	sendAsync ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755603423	Marionette	INFO	sendAsync ae5e6e9f-5f95-4f50-a7be-d329e23919b7
+1692755702997	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver.exe --port <PORT>
+
+For more information try --help
+error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver.exe --port <PORT>
+
+For more information try --help
+1692756465942	geckodriver	INFO	Listening on 127.0.0.1:59544
+1692756469146	mozprofile::profile	INFO	Using profile path C:\Users\Administrator\AppData\Local\Temp\rust_mozprofile.ZIYgt0qpQurg
+1692756469151	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args []
+1692756469172	geckodriver::marionette	INFO	Connecting to Marionette on localhost:59563
+1692756471000	Marionette	INFO	Listening on port 59563
+1692756472504	Marionette	INFO	startBrowser 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+1692756472520	Marionette	INFO	sendAsync 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+1692756472781	Marionette	INFO	sendAsync 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+1692756479791	Marionette	INFO	sendAsync 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+1692756479832	Marionette	INFO	sendAsync 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+1692756482112	Marionette	INFO	sendAsync 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+JavaScript error: https://storage.jd.com/retail-mall/jdc_user_passport/pc/user/passport/1.0.4/js/login.username.js, line 2: TypeError: f is null
+1692756484382	Marionette	INFO	sendAsync 8234e6ad-5ab2-4c5d-afae-2b25f1cc432e
+1692756559451	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
