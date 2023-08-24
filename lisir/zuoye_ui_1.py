@@ -59,9 +59,9 @@ time.sleep(1)
 driver.find_element(By.XPATH, '//*[@id="loginBtn"]').click()  # 登录
 
 time.sleep(1)
-driver.find_element(By.XPATH, '//*[@id="menu-user"]/dt/i').click()#中心
+driver.find_element(By.XPATH, '//*[@id="menu-user"]/dt/i').click()  # 中心
 time.sleep(1)
-driver.find_element(By.XPATH, '//*[@id="menu-user"]/dd/ul/li[1]/a').click()#管理
+driver.find_element(By.XPATH, '//*[@id="menu-user"]/dd/ul/li[1]/a').click()  # 管理
 time.sleep(1)
 
 el = driver.find_element(By.XPATH, '//*[@id="iframe_box"]/div[2]/iframe')
@@ -92,13 +92,13 @@ time.sleep(2)
 el = driver.find_element(By.XPATH, '//*[@id="iframe_box"]/div[2]/iframe')
 driver.switch_to.frame(el)  # 切换frame
 time.sleep(2)
-driver.find_element(By.XPATH, '//*[@id="sysUserTab"]/tr[1]/td[9]/a[4]/i').click() # 删除按钮
+driver.find_element(By.XPATH, '//*[@id="sysUserTab"]/tr[1]/td[9]/a[4]/i').click()  # 删除按钮
 time.sleep(1)
-driver.find_element(By.XPATH,'//*[@id="xubox_layer1"]/div[1]/span[2]/a[1]').click()  # 点击确定删除
+driver.find_element(By.XPATH, '//*[@id="xubox_layer1"]/div[1]/span[2]/a[1]').click()  # 点击确定删除
 
 time.sleep(2)
 driver.switch_to.default_content()  # 退出框
 driver.find_element(By.XPATH, '/html/body/header/span[2]/a').click()  # 退出登录
 
 time.sleep(5)
-driver.quit() # 退出浏览器
+driver.quit()  # 退出浏览器
