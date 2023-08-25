@@ -95,3 +95,4 @@ if __name__ == '__main__':
     with open(fr'D:\class_project\study_kiros_0814\ui_test_code\report-{time.strftime("%y-%m-%d-%H-%M-%S")}.html','wb')as file_wb:   # 写入报告文件地址
         runner = HTMLTestRunner(file_wb,verbosity=2,title='CMS_UI自动化报告',description='内容如下：')  # 写入内容
         runner.run(dis)
+

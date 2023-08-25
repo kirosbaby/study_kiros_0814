@@ -27,7 +27,7 @@ driver.maximize_window()
 
 '''等待'''
 # time.sleep(10) # 强制等待---固定等待
-# driver.WebDriverWait(driver,10) # 隐式等待---全局等待---等待整个页面加载
+driver.implicitly_wait(10) # 隐式等待---全局等待---等待整个页面加载
 
 # 显示等待---等待具体的元素加载
 # wait = WebDriverWait(driver, 10)  # 实例化等待的类，拿到对象，并传入等待时间

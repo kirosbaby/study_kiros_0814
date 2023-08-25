@@ -14,6 +14,7 @@ unittest----
 4.执行顺序根据ascii
 5.用例级别的初始化结束方法setUp/tearDown
 6.类级别的初始化和结束方法setUpClass/tearDownClass
+7.有丰富的断言方法
 '''
 
 '''
