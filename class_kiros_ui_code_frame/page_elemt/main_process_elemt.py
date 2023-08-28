@@ -11,6 +11,8 @@ class Process_Elemt():
     user_name = (By.XPATH, '//*[@id="userAccount"]')
     pwd = (By.XPATH, '//*[@id="loginPwd"]')
     login_but = (By.XPATH, '//*[@id="loginBtn"]')
+    user_text=(By.CSS_SELECTOR,'[class="c-white"]')
+
 
     user_center = (By.XPATH, '//*[@id="menu-user"]/dt/i')
     user_manage = (By.XPATH, '//*[@id="menu-user"]/dd/ul/li[1]/a')

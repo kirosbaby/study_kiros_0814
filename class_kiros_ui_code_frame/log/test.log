@@ -1,0 +1,41 @@
+警告--日志
+错误xxx日志
+严重---错误
+警告--日志
+错误xxx日志
+严重---错误
+警告--日志
+错误xxx日志
+严重---错误
+2023-08-28 10:43:59,567-test_log.py-[line:21]-WARNING-test_log-警告--日志
+2023-08-28 10:43:59,568-test_log.py-[line:22]-ERROR-test_log-错误xxx日志
+2023-08-28 10:43:59,568-test_log.py-[line:23]-CRITICAL-test_log-严重---错误
+2023-08-28 10:47:41,751-test_log.py-[line:24]-WARNING-test_log-警告--日志
+2023-08-28 10:47:41,751-test_log.py-[line:25]-ERROR-test_log-错误xxx日志
+2023-08-28 10:47:41,751-test_log.py-[line:26]-CRITICAL-test_log-严重---错误
+2023-08-28 10:47:47,780-test_log.py-[line:24]-WARNING-test_log-警告--日志
+2023-08-28 10:47:47,780-test_log.py-[line:25]-ERROR-test_log-错误xxx日志
+2023-08-28 10:47:47,781-test_log.py-[line:26]-CRITICAL-test_log-严重---错误
+2023-08-28 10:47:48,936-test_log.py-[line:24]-WARNING-test_log-警告--日志
+2023-08-28 10:47:48,936-test_log.py-[line:25]-ERROR-test_log-错误xxx日志
+2023-08-28 10:47:48,936-test_log.py-[line:26]-CRITICAL-test_log-严重---错误
+2023-08-28 10:47:50,058-test_log.py-[line:24]-WARNING-test_log-警告--日志
+2023-08-28 10:47:50,058-test_log.py-[line:25]-ERROR-test_log-错误xxx日志
+2023-08-28 10:47:50,058-test_log.py-[line:26]-CRITICAL-test_log-严重---错误
+2023-08-28 10:47:52,888-test_log.py-[line:24]-WARNING-test_log-警告--日志
+2023-08-28 10:47:52,889-test_log.py-[line:25]-ERROR-test_log-错误xxx日志
+2023-08-28 10:47:52,889-test_log.py-[line:26]-CRITICAL-test_log-严重---错误
+2023-08-28 10:47:54,362-test_log.py-[line:24]-WARNING-test_log-警告--日志
+2023-08-28 10:47:54,362-test_log.py-[line:25]-ERROR-test_log-错误xxx日志
+2023-08-28 10:47:54,362-test_log.py-[line:26]-CRITICAL-test_log-严重---错误
+2023-08-28 10:51:30,525-test_log.py-[line:24]-DEBUG-test_log-调用日志
+2023-08-28 10:51:30,525-test_log.py-[line:25]-INFO-test_log-正常消息日志
+2023-08-28 10:51:30,525-test_log.py-[line:26]-WARNING-test_log-警告--日志
+2023-08-28 10:51:30,526-test_log.py-[line:27]-ERROR-test_log-错误xxx日志
+2023-08-28 10:51:30,526-test_log.py-[line:28]-CRITICAL-test_log-严重---错误
+2023-08-28 10:51:51,861-test_log.py-[line:27]-ERROR-test_log-错误xxx日志
+2023-08-28 10:51:51,862-test_log.py-[line:28]-CRITICAL-test_log-严重---错误
+2023-08-28 10:51:55,585-test_log.py-[line:27]-ERROR-test_log-错误xxx日志
+2023-08-28 10:51:55,585-test_log.py-[line:28]-CRITICAL-test_log-严重---错误
+2023-08-28 10:51:58,669-test_log.py-[line:27]-ERROR-test_log-错误xxx日志
+2023-08-28 10:51:58,669-test_log.py-[line:28]-CRITICAL-test_log-严重---错误

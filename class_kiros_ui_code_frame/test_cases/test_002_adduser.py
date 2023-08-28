@@ -9,7 +9,7 @@ import unittest, time
 import faker
 from page_elemt.main_process_elemt import Process_Elemt as pe
 from common_method.com_method import Com_Method as cm
-from test_cases.test_001_login import Test_001_login
+# from test_cases.test_001_login import Test_001_login
 
 fake = faker.Faker()
 fake_name = fake.name()

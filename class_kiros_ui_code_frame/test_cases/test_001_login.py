@@ -9,6 +9,7 @@ import unittest, time
 from page_elemt.main_process_elemt import Process_Elemt as pe
 from common_method.com_method import Com_Method as cm
 from conf.login_data import Login_Data as ld
+from utils.logger import trace_log
 
 
 class Test_001_login(unittest.TestCase):
@@ -22,11 +23,17 @@ class Test_001_login(unittest.TestCase):
     def tearDownClass(cls) -> None:
         pass
 
-    @classmethod
-    def test_login(cls):
+    @trace_log
+    def test_login(self):
         cm.get_send(pe.user_name, ld.username())
         cm.get_send(pe.pwd, ld.password())
         cm.get_click(pe.login_but)
         time.sleep(2)
+        text = cm.get_text(pe.user_text)
+        print(text)
+        self.assertIn('admin',text)
+        return text
+
+
 if __name__ == '__main__':
     unittest.main()
