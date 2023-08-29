@@ -1,0 +1,72 @@
+[
+    {
+      "request":
+      {
+        "url": "http://kiros.love/cms/manage/loginJump.do",
+		"header":{"Content-Type":"application/x-www-form-urlencoded"},
+        "body":
+        {
+          "userAccount":"admin",
+          "loginPwd":"123456"
+        }
+      },
+      "response":
+     {"code": "200", "msg": "登录成功！", "model": "{}"}
+    },
+    {
+      "request":
+      {
+        "url": "http://kiros.love/cms/manage/loginJump.do",
+		"header":{"Content-Type":"application/x-www-form-urlencoded"},
+        "body":
+        {
+          "userAccount":"xiaoli",
+          "loginPwd":"123456"
+        }
+      },
+      "response":
+      {"code": "400", "msg": "登录密码不正确！", "model": {}}
+    },
+    {
+      "request":
+      {
+        "url": "http://kiros.love/cms/manage/loginJump.do",
+		"header":{"Content-Type":"application/x-www-form-urlencoded"},
+        "body":
+        {
+          "userAccount":"",
+          "loginPwd":"123456"
+        }
+      },
+      "response":
+      {"code": "200", "msg": "登录成功！", "model": "{}"}
+    },
+    {
+      "request":
+      {
+        "url": "http://kiros.love/cms/manage/loginJump.do",
+		"header":{"Content-Type":"application/x-www-form-urlencoded"},
+        "body":
+        {
+         "userAccount":"admin",
+          "loginPwd":""
+        }
+      },
+      "response":
+      {"code": "200", "msg": "登录成功！", "model": "{}"}
+    },
+    {
+      "request":
+      {
+        "url": "http://kiros.love/cms/manage/loginJump.do",
+		"header":{"Content-Type":"application/x-www-form-urlencoded"},
+        "body":
+        {
+          "userAccount":"admin",
+          "loginPwd":"null"
+        }
+      },
+      "response":
+      {"code": "200", "msg": "登录成功！", "model": "{}"}
+    }
+  ]

@@ -178,6 +178,7 @@ if __name__ == '__main__':
     province.get_city()
 '''
 
+
 # '''json格式'''
 #
 # hread = {'Content-Type': 'application/json'}
@@ -210,22 +211,32 @@ class Test_Cms():
         self.body_login = {"username": "admin", "password": "123456"}
         self.url_query = 'http://192.168.31.240:5000/user/query'
         self.url_delete = 'http://192.168.31.240:5000/user/delete'
+
     def test_login(self):
         self.seesion = requests.Session()
         resp = self.seesion.post(url=self.url_login, json=self.body_login, headers=self.hread)
         print(resp.json()['token'])
         self.token = resp.json()['token']
+        assert '登录成功' in resp.json()['msg']
+
+
     def test_init(self):
         self.token_boby = {"token": self.token}
         resp = self.seesion.post(url=self.url_init, json=self.token_boby, headers=self.hread)
         print(resp.json())
+
     def test_query(self):
         resp = self.seesion.post(url=self.url_query, json=self.token_boby, headers=self.hread)
-        print(resp.json())
+        print(resp.json()['userlist'][1:])  # 切片去除第一个
+        print(random.choice(resp.json()['userlist'][1:]))  # 随机取一个
+        self.value = random.choice(resp.json()['userlist'][1:])
+
     def test_delete(self):
-        self.body_delete = {"token": self.token, "username": "user16"}
+        self.body_delete = {"token": self.token, "username": self.value}
         resp = self.seesion.post(url=self.url_delete, json=self.body_delete, headers=self.hread)
         print(resp.json())
+        assert 3000 == resp.json()['code']
+
 
 if __name__ == '__main__':
     testcms = Test_Cms()
@@ -233,5 +244,3 @@ if __name__ == '__main__':
     testcms.test_init()
     testcms.test_query()
     testcms.test_delete()
-
-
