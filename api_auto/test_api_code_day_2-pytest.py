@@ -14,9 +14,18 @@ import pytest
 5、：：冒号代表层级关系
 6、方法(用例)级别的初始化和结束方法setup/teardown
 7、类级别的初始化和结束方法setup_class/teardown_class
+8、函数级别的初始化和结束方法setup_function/teardown_function
+9、模块级别的初始化和结束方法setup_module/teardown_module
 '''
 
-
+def setup_module():
+    print('模块级别---打开浏览器')
+def teardown_module():
+    print('模块级别---关闭浏览器')
+# def setup_function():
+#     print('函数级别---打开浏览器')
+# def teardown_function():
+#     print('函数级别---关闭浏览器')
 @pytest.mark.p0
 def test_open_func1():
     print('这是函数test_open_func1')
