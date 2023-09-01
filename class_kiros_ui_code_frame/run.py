@@ -4,7 +4,7 @@
 @Auth:kirosbaby
 @QQ:308902181
 """
-import unittest, time
+import unittest, time,os
 from conf.config import get_path
 from utils.HTMLTestRunner import HTMLTestRunner
 from utils.email_new import Test_Email

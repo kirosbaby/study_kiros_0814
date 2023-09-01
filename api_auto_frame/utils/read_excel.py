@@ -12,10 +12,10 @@ from utils.read_yaml import Read_Yaml
 
 
 class Read_Excel():
-    def __init__(self,num,*args):
+    def __init__(self):
         self.read_y = Read_Yaml('data', 'data_new.yaml') # 实例化
-        book = xlrd.open_workbook(get_path(*args))
-        self.sheet = book.sheet_by_index(num)
+        book = xlrd.open_workbook(get_path('data', 'Data.xlsx'))
+        self.sheet = book.sheet_by_index(0)
         self.case_id = 0
         self.url = 2
         self.params = 4
