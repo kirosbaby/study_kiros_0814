@@ -13,11 +13,11 @@ driver = webdriver.Chrome()  # 实例化
 url1 = 'https://www.baidu.com'
 url2 = 'file:///C:/Users/Administrator/Documents/Tencent%20Files/308902181/FileRecv/study.html'
 url3 = 'https://jd.com'
-driver.get(url2)
+driver.get(url1)
 
 '''id定位'''
-# driver.find_element_by_id('kw').send_keys('牛郎织女千里来相会')  # send_keys--输入内容
-# driver.find_element_by_id('su').click()  # 点击
+driver.find_element_by_id('kw').send_keys('牛郎织女千里来相会')  # send_keys--输入内容
+driver.find_element_by_id('su').click()  # 点击
 #
 # driver.find_element(By.ID,'kw').send_keys('你好')
 # driver.find_element(By.ID,'su').click()
@@ -57,11 +57,11 @@ driver.get(url2)
 #     i.click()
 #     time.sleep(1)
 '''下拉框'''
-time.sleep(1)
-# driver.find_element(By.XPATH,'//*[@id="file_number"]').send_keys(r'C:\Users\Administrator\Desktop\原桌面\class.txt')
-time.sleep(3)
-elemt = driver.find_element(By.XPATH,'/html/body/form/table/tbody/tr[7]/td[2]/select')
-select=Select(elemt)
+# time.sleep(1)
+# # driver.find_element(By.XPATH,'//*[@id="file_number"]').send_keys(r'C:\Users\Administrator\Desktop\原桌面\class.txt')
+# time.sleep(3)
+# elemt = driver.find_element(By.XPATH,'/html/body/form/table/tbody/tr[7]/td[2]/select')
+# select=Select(elemt)
 # select.select_by_index(1) # 索引获取下拉选项
 # select.select_by_value('北京') # value属性的值获取下拉选项
 # select.select_by_visible_text('哈佛大学')# 通过文本获取下拉选项
